@@ -47,21 +47,16 @@ function double(value: number): number;
 function double(value: string): string;
 
 function double(value: any): any {
-  console.log('値の型:' + typeof value);
+  console.log(typeof value);
   if (typeof value === 'number') {
     // ナンバー型の時だけ処理する
     return value * 2;
-  } else (typeof value === 'string'){
+  } else {
     return value + value;
   }
-  // 必要なくなる
-  // else {
-  //   throw '引数の型を確認ください。number型でもstring型でもありません。'
-  // }
 }
 
 console.log(double(100));
-console.log(double('Go'));
-console.log(double(true));
+console.log(double('Go '));
 
 
