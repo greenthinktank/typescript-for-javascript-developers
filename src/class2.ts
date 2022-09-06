@@ -1,5 +1,28 @@
 export {};
 
+// ジェネリクス
+// const test = <T>(arg: T): T => {
+//   return arg;
+// };
+
+// console.log(test<number>(100));
+// console.log(test<string>('hi'));
+// console.log(test<boolean>(true));
+
+// class Mirror <T> {
+//   constructor (public value: T) {}
+
+//   echo(): T {
+//     return this.value;
+//   }
+// }
+
+// console.log(new Mirror<number>(123).echo());
+// console.log(new Mirror<string>('hi!').echo());
+// console.log(new Mirror<boolean>(true).echo());
+
+
+
 // ---------------------
 // 型の互換性 47
 
