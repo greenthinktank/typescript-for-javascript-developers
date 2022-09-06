@@ -1,28 +1,50 @@
 export {};
 
-// 継承
-class Animal {
-  constructor(public name: string) {}
-  run():string {
-    return 'I can run';
-  }
+// 抽象クラス
+// 抽象メソッド
+// シグネチャー
+
+abstract class Animal {
+  abstract cry(): string;
 }
 
 class Lion extends Animal {
-  public speed: number;
-  constructor(name: string, speed: number ){
-    super(name);
-    this.speed = speed;
-  }
-  run(): string {
-    const parentMessage = super.run();
-    // return 'I can run 80km.';
-    return `${parentMessage} ${this.speed}km/h.`;
+  cry() {
+    return 'roar';
   }
 }
 
-console.log(new Animal('Mickey').run());
-console.log(new Lion('Simba', 70).run());
+class Tiger extends Animal {
+  cry() {
+    return 'grrrr';
+  }
+}
+
+
+
+// // 継承
+// class Animal {
+//   constructor(public name: string) {}
+//   run():string {
+//     return 'I can run';
+//   }
+// }
+
+// class Lion extends Animal {
+//   public speed: number;
+//   constructor(name: string, speed: number ){
+//     super(name);
+//     this.speed = speed;
+//   }
+//   run(): string {
+//     const parentMessage = super.run();
+//     // return 'I can run 80km.';
+//     return `${parentMessage} ${this.speed}km/h.`;
+//   }
+// }
+
+// console.log(new Animal('Mickey').run());
+// console.log(new Lion('Simba', 70).run());
 
 
 
