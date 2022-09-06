@@ -1,32 +1,57 @@
 export {};
+
+// ---------------------
+// 型の互換性 47
+
+// let fooCompatible: any;
+// let barCompatible: string = 'TypeScript';
+
+// console.log(typeof fooCompatible);
+
+// fooCompatible = barCompatible;
+
+// console.log(typeof fooCompatible);
+
+// interface Animal {
+//   age: number;
+//   name: string;
+// }
+
+// class Person implements Animal{
+//   constructor(public age: number, public name: string){}
+//   // constructor(public age: number){}
+// }
+
+// let me: Animal;
+// me = new Person(43, 'ham');
+// console.log(me.name);
+
+
+
 // ---------------------
 // インターフェイス
 
-// class Mahotsukai {}
-// class Souryo {}
+// interface Kenja {
+//   ionazun(): void;
+// }
 
+// interface Senshi {
+//   kougeki(): void;
+// }
 
-interface Kenja {
-  ionazun(): void;
-}
+// // 多重継承
+// class Jiro implements Kenja, Senshi {
+//   ionazun(): void {
+//     console.log('ionazun');
+//   }
+//   kougeki(): void {
+//     console.log('kougeki');
+//   }
+// }
 
-interface Senshi {
-  kougeki(): void;
-}
-
-// 多重継承
-class Jiro implements Kenja, Senshi {
-  ionazun(): void {
-    console.log('ionazun');
-  }
-  kougeki(): void {
-    console.log('kougeki');
-  }
-}
-
-const jiro = new Jiro();
-jiro.ionazun();
-jiro.kougeki();
+// const jiro = new Jiro();
+// jiro.ionazun();
+// jiro.kougeki();
 
 
 // ------------------------
