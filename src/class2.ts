@@ -1,24 +1,54 @@
 export {};
+// ---------------------
+// インターフェイス
 
+// class Mahotsukai {}
+// class Souryo {}
+
+
+interface Kenja {
+  ionazun(): void;
+}
+
+interface Senshi {
+  kougeki(): void;
+}
+
+// 多重継承
+class Jiro implements Kenja, Senshi {
+  ionazun(): void {
+    console.log('ionazun');
+  }
+  kougeki(): void {
+    console.log('kougeki');
+  }
+}
+
+const jiro = new Jiro();
+jiro.ionazun();
+jiro.kougeki();
+
+
+// ------------------------
 // 抽象クラス
 // 抽象メソッド
 // シグネチャー
 
-abstract class Animal {
-  abstract cry(): string;
-}
+// abstract class Animal {
+//   abstract cry(): string;
+// }
 
-class Lion extends Animal {
-  cry() {
-    return 'roar';
-  }
-}
+// class Lion extends Animal {
+//   cry() {
+//     return 'roar';
+//   }
+// }
 
-class Tiger extends Animal {
-  cry() {
-    return 'grrrr';
-  }
-}
+// class Tiger extends Animal {
+//   cry() {
+//     return 'grrrr';
+//   }
+// }
 
 
 
