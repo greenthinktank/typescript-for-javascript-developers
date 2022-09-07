@@ -1,5 +1,16 @@
 export {};
 
+// 型アサーション
+
+let name: any = 'ham'
+
+// let length = name.length as number;
+// let length = (name as string) .length;
+// 非推奨（reactと形が似ているから
+// let length = (<string>name).length;
+
+
+// --------------------
 // ジェネリクス
 // const test = <T>(arg: T): T => {
 //   return arg;
