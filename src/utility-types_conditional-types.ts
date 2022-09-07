@@ -1,9 +1,25 @@
-export {};
+export { };
 
 // セクション６
 
 // --------------------------
 
+type debugType = () => void;
+type SomeTypes = string | number | debugType;
+
+// Exclude < unionタイプの型, 除外したい型>
+type FunctionType = Exclude<SomeTypes, string | number>;
+type NonFunctionType = Exclude<SomeTypes, debugType>;
+
+// 「Function」は型の総称。
+type ExcludingFunction = Exclude<SomeTypes, Function>;
+
+// Exclude < unionタイプの型, 除外したい型>
+type FunctionTypeByExtract = Extract<SomeTypes, debugType>;
+
+type NullableTypes = string | number | null | undefined;
+
+type NonNullableTypes = NonNullable<NullableTypes>;
 
 
 // --------------------------
