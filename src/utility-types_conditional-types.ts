@@ -3,10 +3,46 @@ export {};
 // セクション６
 
 // --------------------------
+
+
+
 // --------------------------
+// Record
+// type Prefecture = 'Tokyo' | 'Tottori' | 'chiba' | 'yamaguchi';
+
+// type Covid19InfectionInfo = {
+//   kanji_name: string,
+//   confirmed_cases: number
+// };
+
+// const Covid19InfectionJapan: Record <Prefecture ,Covid19InfectionInfo> = {
+//   Tokyo: {kanji_name: '東京', confirmed_cases: 1960},
+//   Tottori: {kanji_name: '鳥取', confirmed_cases: 1960},
+//   chiba: {kanji_name: '東京', confirmed_cases: 5},
+//   yamaguchi: {kanji_name: '東京', confirmed_cases:30}
+// };
+
+
 // --------------------------
 // readonly
 
+// type Profile = {
+//   name: string,
+//   age: number
+// };
+
+// type PersonalDataType = Readonly<Profile>;
+
+// const me: Profile = {
+//   name : 'ham',
+//   age : 43
+// };
+
+// me.age++;
+
+// console.log(me);
+
+// type YomitoriOnly <T> = { readonly [P in keyof T]: T[P] };
 
 
 // --------------------------
