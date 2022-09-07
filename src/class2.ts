@@ -2,6 +2,18 @@ export {};
 // ----------------------
 // ----------------------
 // ----------------------
+
+
+
+// ----------------------
+// nullable types
+let profile: {name: string, age: number | null } = {
+  name: 'ham',
+  age: null
+}
+
+
+// ----------------------
 // const アサーション
 
 // let profile = {
@@ -18,6 +30,7 @@ export {};
 // };
 
 // profile.name = 'hirano'
+
 
 // ----------------------
 // 型アサーション
