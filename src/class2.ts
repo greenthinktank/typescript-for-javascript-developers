@@ -1,17 +1,30 @@
 export {};
+
 // ----------------------
-// ----------------------
-// ----------------------
+// インデックスシグネチャー
+
+// interface profile {
+//   under20: boolean,
+//   [ index: string ]: string | number | boolean
+// }
+
+// const profile: profile = {under20: true};
+
+// profile.name = 'hirano'
+// profile.age = 34
+
+
+// console.log(profile);
 
 
 
 // ----------------------
 // nullable types
-let profile: {name: string, age: number | null } = {
-  name: 'ham',
-  age: null
-}
 
+// let profile: {name: string, age: number | null } = {
+//   name: 'ham',
+//   age: null
+// }
 
 // ----------------------
 // const アサーション
