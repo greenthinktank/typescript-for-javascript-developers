@@ -1,9 +1,28 @@
 export {};
+// ----------------------
+// ----------------------
+// ----------------------
+// const アサーション
 
+// let profile = {
+//   name: 'ham',
+//   height: '178'
+// } as const;
+
+// let profile : {
+//   name: 'ham',
+//   height: '178'
+// } = {
+//   name: 'ham',
+//   height: '178'
+// };
+
+// profile.name = 'hirano'
+
+// ----------------------
 // 型アサーション
 
-let name: any = 'ham'
-
+// let name: any = 'ham'
 // let length = name.length as number;
 // let length = (name as string) .length;
 // 非推奨（reactと形が似ているから
